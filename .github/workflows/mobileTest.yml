@@ -22,7 +22,7 @@ jobs:
         run: npm t
       - name: Publish Report
         uses: peaceiris/actions-gh-pages@v4
-        if: always()
+        if: github.ref == 'refs/heads/ci'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./allure-report
