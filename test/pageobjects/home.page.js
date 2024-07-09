@@ -3,7 +3,7 @@ import { $ } from '@wdio/globals'
 class HomePage {
 
     async openMenu(menu){
-        await $(`id:tab-Account${menu}`).click()
+        await $(`id:tab-${menu}`).click()
     }
 
     async search(){
