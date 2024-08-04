@@ -6,8 +6,8 @@ import browsePage from '../pageobjects/browse.page.js'
 import productPage from '../pageobjects/product.page.js'
 import adressPage from '../pageobjects/adress.page.js'
 
-describe('Login', () => {
-    it('login com credenciais validas', async () => {
+describe('Fluxo de Compra', () => {
+    it('Fluxo de compra completo', async () => {
         let profileTab = driver.isAndroid ? 'profile' : 'Account'
         await homePage.openMenu(profileTab)
         await loginPage.login('cliente@ebac.art.br', 'GD*peToHNJ1#c$sgk08EaYJQ')
